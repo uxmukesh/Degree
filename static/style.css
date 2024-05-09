@@ -1,0 +1,535 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("../images/gym8.jpg");
+    background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+}
+
+.navbar{
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 800;
+    /* display: inline-flex; */
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    background-color: white;
+
+}
+.form1{
+    background-color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+
+}
+.navbar .navlist{
+    display: flex;
+    text-align: center;
+    margin-left: 30%;
+}
+
+.navbar .navlist .navbarlinks{
+    list-style: none;
+    border-right: 2px solid black;
+    padding: 5px;
+    margin-right: 2px;
+}
+
+.navbar .navlist a{
+    text-decoration: none;
+}
+
+.navbar .navlist a:hover{
+    text-decoration: underline;
+    color: rebeccapurple;
+}
+.navbar .navlist a:active{
+    color: red;
+    /* transform: translateZ(-50%); */
+    
+}
+
+.headerImage{
+    width:100%;
+    height: 200px;
+    background-color: brown;
+    background-image: url("../images/gym8.jpg");
+    background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+}
+
+.headerImage h1{
+    margin-top: 100px;
+    color:rgb(10, 9, 10);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform:uppercase;
+}
+
+.contactform{
+    margin-top: 50px;
+}
+
+.btn{
+    width: 100%;
+
+}
+.submit{
+    width: 100%;
+    background-color: rgb(197, 12, 160);
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 600;
+    
+}
+.content{
+    margin-top: 100px;
+    text-align: center;
+}
+.content .about{
+    width: 400px;
+    height: 400px;
+    background-color: floralwhite;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 2px black;
+    margin-top: 240px;
+    padding: 8px;
+    margin-left: 20%;
+
+    
+}
+.content .about .description{
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+
+}
+
+.content .about .navigate{
+    margin-top: 70px;
+}
+.content .about .navigate .getstarted{
+    outline: none;
+    width: 50%;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(4, 105, 6);
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 24px;
+}
+.content .about .image{
+    width: 100%;
+    height: 200px;
+
+}
+
+.maincontent{
+    margin-top: 20%;
+}
+.skillarea{
+    display: grid;
+    align-items: center;
+    text-align: center;
+}
+.skillarea .skillbtn .skill{
+    outline: none;
+    width: 50%;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(4, 105, 6);
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 20px;
+
+}
+.skillfooter{
+    background-color: rgb(22, 4, 14);
+    position: absolute;
+    bottom: 0;
+    top: 160%;
+    text-align: center;
+    align-items: center;
+    width:100%;
+    height: 50px;
+    color: white;
+}
+
+.explain{
+    width: 100%;
+    height:100vh;
+    background-color: white;
+    padding: 10px;
+    line-height: 40px;
+}
+.content .about .image img{
+    width: 100%;
+    height: 100%;
+}
+
+.content .about2{
+    width: 400px;
+    height: 400px;
+    background-color: floralwhite;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 2px black;
+    /* margin-top: 240px; */
+    padding: 8px;
+    margin-left: 55%;
+    margin-top: -22%;
+
+    
+}
+.content .about2 .image{
+    width: 100%;
+    height: 200px;
+
+}
+
+.content .about2 .image img{
+    width: 100%;
+    height: 100%;
+}
+
+.content .about2 .description{
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+
+}
+
+.content .about2 .navigate{
+    margin-top: 70px;
+}
+.content .about2 .navigate .getstarted{
+    outline: none;
+    width: 50%;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(4, 105, 6);
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* start of about 3 */
+.content .about3{
+    width: 400px;
+    height: 300px;
+    background-color: floralwhite;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 2px black;
+    margin-top: 240px;
+    padding: 8px;
+    margin-left: 20%;
+    margin-top: 5%;
+
+    
+}
+.content .about3 .image{
+    width: 100%;
+    height: 100px;
+
+}
+
+.content .about3 .image img{
+    width: 100%;
+    height: 100%;
+}
+
+.content .about3 .description{
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+
+}
+
+.content .about3 .navigate{
+    margin-top: 70px;
+}
+.content .about3 .navigate .getstarted{
+    outline: none;
+    width: 50%;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(4, 105, 6);
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 24px;
+}
+/* end of about 3 */
+.content .about4{
+    width: 400px;
+    height: 300px;
+    background-color: floralwhite;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 2px black;
+    margin-top: 240px;
+    padding: 8px;
+    margin-left: 55%;
+    margin-top: -20%;
+
+    
+}
+.content .about4 .image{
+    width: 100%;
+    height: 100px;
+
+}
+
+.content .about4 .image img{
+    width: 100%;
+    height: 100%;
+}
+
+.content .about4 .description{
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+
+}
+
+.content .about4 .navigate{
+    margin-top: 70px;
+}
+.content .about4 .navigate .getstarted{
+    outline: none;
+    width: 50%;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(4, 105, 6);
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 24px;
+}
+/* end of about 4 */
+
+.footer{
+    text-align: center;
+    /* margin-top: 50px; */
+}
+.footer1{
+    background-color: rgb(22, 4, 14);
+    position: absolute;
+    bottom: 0;
+    top: 150%;
+    text-align: center;
+    align-items: center;
+    width:100%;
+    height: 50px;
+    color: white;
+}
+.projects{
+    background-color: rgb(22, 4, 14);
+    position: absolute;
+    bottom: 0;
+    top: 150%;
+    text-align: center;
+    align-items: center;
+    width:100%;
+    height: 50px;
+    color: white;
+}
+@media (max-width:1000px) {
+    .content .about{       
+        margin-top: 240px;
+        margin-left: 30%;
+        margin-top: 10%;   
+        
+    }
+    .content .about2{       
+        margin-top: 240px;
+        margin-left: 30%;
+        margin-top: 10%;   
+        
+    }
+    .content .about3{       
+        margin-top: 240px;
+        margin-left: 30%;
+        margin-top: 10%;   
+        
+    }
+    .content .about4{       
+        margin-top: 240px;
+        margin-left: 30%;
+        margin-top: 10%;   
+        
+    }
+    .projects{
+        
+        position: absolute;
+        bottom: 0;
+        top: 260%;
+        text-align: center;
+        width:100%;
+        height: 50px;
+    }
+}
+
+@media (max-width:900px) {
+    .content .about{       
+        margin-top: 240px;
+        margin-left: 20%;
+        margin-top: 10%;   
+        
+    }
+    .content .about2{       
+        margin-top: 240px;
+        margin-left: 20%;
+        margin-top: 10%;   
+        
+    }
+    .content .about3{       
+        margin-top: 240px;
+        margin-left: 20%;
+        margin-top: 10%;   
+        
+    }
+    .content .about4{       
+        margin-top: 240px;
+        margin-left: 20%;
+        margin-top: 10%;   
+        
+    }
+    .projects{
+        
+        position: absolute;
+        bottom: 0;
+        top: 250%;
+        text-align: center;
+        width:100%;
+        height: 50px;
+    }
+}
+
+@media (max-width:700px) {
+    .content .about{       
+        margin-top: 240px;
+        margin-left: 10%;
+        margin-top: 10%;   
+        
+    }
+    .content .about2{       
+        margin-top: 240px;
+        margin-left: 10%;
+        margin-top: 10%;   
+        
+    }
+    .content .about3{       
+        margin-top: 240px;
+        margin-left: 10%;
+        margin-top: 10%;   
+        
+    }
+    .content .about4{       
+        margin-top: 240px;
+        margin-left: 10%;
+        margin-top: 10%;   
+        
+    }
+    .footer1{
+        
+        position: absolute;
+        bottom: 0;
+        top: 170%;
+        text-align: center;
+        width:100%;
+        height: 50px;
+    }
+    .navbar .navlist{
+        display: flex;
+        text-align: center;
+        margin-left: 20%;
+    }
+    .footer1{
+        
+        position: absolute;
+        bottom: 0;
+        top: 150%;
+        text-align: center;
+        width:100%;
+        height: 50px;
+    }
+    .projects{
+        
+        position: absolute;
+        bottom: 0;
+        top: 250%;
+        text-align: center;
+        width:100%;
+        height: 50px;
+    }
+}
+
+@media (max-width:600px) {
+    .content .about{       
+        margin-top: 240px;
+        margin-left: 5%;
+        margin-top: 10%;   
+        
+    }
+    .content .about2{       
+        margin-top: 240px;
+        margin-left: 5%;
+        margin-top: 10%;   
+        
+    }
+    .content .about3{       
+        margin-top: 240px;
+        margin-left: 5%;
+        margin-top: 10%;   
+        
+    }
+    .content .about4{       
+        margin-top: 240px;
+        margin-left: 5%;
+        margin-top: 10%;   
+        
+    }
+    .navbar .navlist{
+        display: flex;
+        text-align: center;
+        margin-left: 5%;
+    }
+    .projects{
+        
+        position: absolute;
+        bottom: 0;
+        top: 250%;
+        text-align: center;
+        width:100%;
+        height: 50px;
+    }
+    .skillarea{
+        margin-top: 20%;
+    }
+    .maincontent{
+        margin-top: 30%;
+    }
+    .skillarea .skillbtn .skill{
+        margin-top: 10%;
+    
+    }
+}

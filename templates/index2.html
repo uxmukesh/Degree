@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Core Courses List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 15px;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-top: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        strong {
+            color: #007bff;
+        }
+        em {
+            font-style: italic;
+            color: #666;
+        }
+        ul.prerequisites {
+            margin-top: 10px;
+            margin-left: 20px;
+            padding:10px;
+        }
+        ul.prerequisites li {
+            margin-bottom: 5px;
+            color: #555;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Core Courses List</h1>
+    <ul>
+        {% for course in courses %}
+        <li>
+            <strong>{{ course.subject }} {{ course.course_number }}:</strong> {{ course.course_name }} 
+            <br>({{ course.credit }} credits)<br>
+            Description: {{ course.course_description }}<br>
+            Semester: {{course.term}}<br>
+            Time_code: {{course.time_code}}
+            {% if course.prerequisites %}
+            <br><em>Prerequisites:</em>
+            <ul class="prerequisites">
+                {% for prerequisite in course.prerequisites %}
+                <li>{{ prerequisite }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+        </li>
+        {% endfor %}
+        <h1>Elective Courses List</h1>
+            <ul>
+                {% for course in electives %}
+                <li>
+                    <strong>{{ course.subject }} {{ course.course_number }}:</strong>{{ course.course_name }} ({{ course.credit }} credits)<br><br>
+                    {{ course.course_description }}<br>
+                    {% if course.rotation_terms %}
+                    <br><em>Semesters and Time Code:</em>
+                    <ul >
+                        {% for term in course.rotation_terms %}
+                        <li>Semester: {{ term.term }}</li>
+                        <li>Time_Code: {{ term.time_code }}</li>
+                        {% endfor %}                        
+                    </ul>
+                    {% endif %}
+                    {% if course.prerequisites %}
+                    <br><em>Prerequisites:</em>
+                    <ul class="prerequisites">
+                        {% for prerequisite in course.prerequisites %}
+                        <li>{{ prerequisite }}</li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                </li>
+                {% endfor %}
+            </ul>
+            <!-- start of the Math and Statistics courses -->
+            <h1>Maths and Statistics Courses List</h1>
+            <ul>
+                {% for course in stat %}
+                <li>
+                    <strong>{{ course.subject }} {{ course.course_number }}:</strong>{{ course.course_name }} ({{ course.credit }} credits)<br><br>
+                    {{ course.course_description }}<br>
+                    {% if course.rotation_terms %}
+                    <br><em>Semesters and Time Code:</em>
+                    <ul >
+                        {% for term in course.rotation_terms %}
+                        <li>Semester: {{ term.term }}</li>
+                        <li>Time_Code: {{ term.time_code }}</li>
+                        {% endfor %}                        
+                    </ul>
+                    {% endif %}
+                    {% if course.prerequisites %}
+                    <br><em>Prerequisites:</em>
+                    <ul class="prerequisites">
+                        {% for prerequisite in course.prerequisites %}
+                        <li>{{ prerequisite }}</li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                </li>
+                {% endfor %}
+            </ul>
+
+            <!-- start of the Other courses -->
+            <h1>Other courses List Courses List</h1>
+            <ul>
+                {% for course in othercourses %}
+                <li>
+                    <strong>{{ course.subject }} {{ course.course_number }}:</strong>{{ course.course_name }} ({{ course.credit }} credits)<br><br>
+                    {{ course.course_description }}<br>
+                    
+                    {% if course.rotation_terms %}
+                    <br><em>Semesters and Time Code:</em>
+                    <ul >
+                        {% for term in course.rotation_terms %}
+                        <li>Semester: {{ term.term }}</li>
+                        <li>Time_Code: {{ term.time_code }}</li>
+                        {% endfor %}                        
+                    </ul>
+                    {% endif %}
+                    {% if course.prerequisites %}
+                    <br><em>Prerequisites:</em>
+                    <ul class="prerequisites">
+                        {% for prerequisite in course.prerequisites %}
+                        <li>{{ prerequisite }}</li>
+                        {% endfor %}
+
+                    </ul>
+                    {% endif %}
+                </li>
+                {% endfor %}
+            </ul>
+</body>
+</html>
